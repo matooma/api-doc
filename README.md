@@ -4,22 +4,22 @@
 
 Version   | Date
 --------- | --------------
-**[1.0.0](#-Version-1-0-0)** | **11-01-2021**
+**[1.0.0](#version-100)** | **11-01-2021**
 
 # Version 1.0.0
 
-1. [Authentication](#-authentication)
-2. [Consumptions](#-consumptions)
-3. [Devices](#-devices)
-4. [Agencies](#-agencies)
-5. [Manufacturers](#-manufacturers)
-6. [Offers](#-offers)
-7. [Operators](#-operators)
-8. [Pairing](#-pairing)
-9. [Profiles](#-profiles)
-10. [Provisioning](#-provisioning)
-11. [Simcards](#-simcards)
-12. [SMS](#-sms)
+1. [Authentication](#authentication)
+2. [Consumptions](#consumptions)
+3. [Devices](#devices)
+4. [Agencies](#agencies)
+5. [Manufacturers](#manufacturers)
+6. [Offers](#offers)
+7. [Operators](#operators)
+8. [Pairing](#pairing)
+9. [Profiles](#profiles)
+10. [Provisioning](#provisioning)
+11. [Simcards](#simcards)
+12. [SMS](#sms)
 
 ## :warning: Major updates
 
