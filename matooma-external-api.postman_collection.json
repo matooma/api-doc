@@ -1,0 +1,1083 @@
+{
+	"info": {
+		"_postman_id": "081985e5-4454-4af5-bad3-e25af3c12a9f",
+		"name": "matooma-external-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "/v1/token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://external-api.matooma.com/v1/token",
+							"protocol": "https",
+							"host": [
+								"external-api",
+								"matooma",
+								"com"
+							],
+							"path": [
+								"v1",
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Consumptions",
+			"item": [
+				{
+					"name": "/v1/consumptions/daily/123",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "abcd123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://external-api.matooma.com/v1/consumptions/daily/123",
+							"protocol": "https",
+							"host": [
+								"external-api",
+								"matooma",
+								"com"
+							],
+							"path": [
+								"v1",
+								"consumptions",
+								"daily",
+								"123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/consumptions/total/123",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "abcd123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://external-api.matooma.com/v1/consumptions/total/123",
+							"protocol": "https",
+							"host": [
+								"external-api",
+								"matooma",
+								"com"
+							],
+							"path": [
+								"v1",
+								"consumptions",
+								"total",
+								"123"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Devices",
+			"item": [
+				{
+					"name": "/v1/devices",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "abcd123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://external-api.matooma.com/v1/devices",
+							"protocol": "https",
+							"host": [
+								"external-api",
+								"matooma",
+								"com"
+							],
+							"path": [
+								"v1",
+								"devices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/devices/1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "abcd123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://external-api.matooma.com/v1/devices/1",
+							"protocol": "https",
+							"host": [
+								"external-api",
+								"matooma",
+								"com"
+							],
+							"path": [
+								"v1",
+								"devices",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/devices/1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "abcd123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"reference\": \"Reference 1\",\n  \"serialNumber\": \"123456\",\n  \"imei\": \"000111222\",\n  \"comment\": \"Comment\",\n  \"contractNumber\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://external-api.matooma.com/v1/devices/1",
+							"protocol": "https",
+							"host": [
+								"external-api",
+								"matooma",
+								"com"
+							],
+							"path": [
+								"v1",
+								"devices",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/devices/models",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "abcd123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://external-api.matooma.com/v1/devices/models",
+							"protocol": "https",
+							"host": [
+								"external-api",
+								"matooma",
+								"com"
+							],
+							"path": [
+								"v1",
+								"devices",
+								"models"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Agencies",
+			"item": [
+				{
+					"name": "/v1/agencies",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "abcd123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://external-api.matooma.com/v1/agencies",
+							"protocol": "https",
+							"host": [
+								"external-api",
+								"matooma",
+								"com"
+							],
+							"path": [
+								"v1",
+								"agencies"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Offers",
+			"item": [
+				{
+					"name": "/v1/offers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "abcd123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://external-api.matooma.com/v1/offers",
+							"protocol": "https",
+							"host": [
+								"external-api",
+								"matooma",
+								"com"
+							],
+							"path": [
+								"v1",
+								"offers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/offers/1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "abcd123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://external-api.matooma.com/v1/offers/1",
+							"protocol": "https",
+							"host": [
+								"external-api",
+								"matooma",
+								"com"
+							],
+							"path": [
+								"v1",
+								"offers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Operators",
+			"item": [
+				{
+					"name": "/v1/operators",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "abcd123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://external-api.matooma.com/v1/operators",
+							"protocol": "https",
+							"host": [
+								"external-api",
+								"matooma",
+								"com"
+							],
+							"path": [
+								"v1",
+								"operators"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pairing",
+			"item": [
+				{
+					"name": "/v1/pairing",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "abcd123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"dry-run\": true,\n  \"customerId\": 1,\n  \"agencyId\": 2,\n  \"modelId\": 3,\n  \"offerId\": 4,\n  \"items\": [\n    {\n        \"iccid\": \"8931080000020000001\",\n        \"serialNumber\": \"123\",\n        \"reference\": \"Ref 01\",\n        \"imei\": \"123456\",\n        \"comment\": \"Comment 01\"\n    },\n    {\n        \"iccid\": \"8931080000020000002\",\n        \"serialNumber\": \"456\",\n        \"reference\": \"Ref 02\",\n        \"imei\": \"456789\",\n        \"comment\": \"Comment 02\"\n    }\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://external-api.matooma.com/v1/pairing",
+							"protocol": "https",
+							"host": [
+								"external-api",
+								"matooma",
+								"com"
+							],
+							"path": [
+								"v1",
+								"pairing"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/pairing/templates",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "abcd123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://external-api.matooma.com/v1/pairing/templates",
+							"protocol": "https",
+							"host": [
+								"external-api",
+								"matooma",
+								"com"
+							],
+							"path": [
+								"v1",
+								"pairing",
+								"templates"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/pairing/templates/1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "abcd123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://external-api.matooma.com/v1/pairing/templates/1",
+							"protocol": "https",
+							"host": [
+								"external-api",
+								"matooma",
+								"com"
+							],
+							"path": [
+								"v1",
+								"pairing",
+								"templates",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/pairing/templates/1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "abcd123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"label\": \"Label\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://external-api.matooma.com/v1/pairing/templates/1",
+							"protocol": "https",
+							"host": [
+								"external-api",
+								"matooma",
+								"com"
+							],
+							"path": [
+								"v1",
+								"pairing",
+								"templates",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/pairing/templates",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "abcd123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"label\": \"Label\",\n  \"customerId\": 1,\n  \"agencyId\": 2,\n  \"offerId\": 3,\n  \"modelId\": 4,\n  \"operatorSlug\": \"Operator\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://external-api.matooma.com/v1/pairing/templates",
+							"protocol": "https",
+							"host": [
+								"external-api",
+								"matooma",
+								"com"
+							],
+							"path": [
+								"v1",
+								"pairing",
+								"templates"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/pairing/templates/1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "abcd123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://external-api.matooma.com/v1/pairing/templates/1",
+							"protocol": "https",
+							"host": [
+								"external-api",
+								"matooma",
+								"com"
+							],
+							"path": [
+								"v1",
+								"pairing",
+								"templates",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Provisioning",
+			"item": [
+				{
+					"name": "/v1/provisioning-requests",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "abcd123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"action\": \"suspend\",\n  \"items\": [\n    \"01234567890123456789\",\n    \"12345678901234567890\"\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://external-api.matooma.com/v1/provisioning-requests",
+							"protocol": "https",
+							"host": [
+								"external-api",
+								"matooma",
+								"com"
+							],
+							"path": [
+								"v1",
+								"provisioning-requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/provisioning-requests",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "abcd123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://external-api.matooma.com/v1/provisioning-requests",
+							"protocol": "https",
+							"host": [
+								"external-api",
+								"matooma",
+								"com"
+							],
+							"path": [
+								"v1",
+								"provisioning-requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/provisioning-requests/1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "abcd123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://external-api.matooma.com/v1/provisioning-requests/1",
+							"protocol": "https",
+							"host": [
+								"external-api",
+								"matooma",
+								"com"
+							],
+							"path": [
+								"v1",
+								"provisioning-requests",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Simcards",
+			"item": [
+				{
+					"name": "/v1/simcards",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "abcd123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://external-api.matooma.com/v1/simcards",
+							"protocol": "https",
+							"host": [
+								"external-api",
+								"matooma",
+								"com"
+							],
+							"path": [
+								"v1",
+								"simcards"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/simcards/1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "abcd123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://external-api.matooma.com/v1/simcards/8931080000020000001",
+							"protocol": "https",
+							"host": [
+								"external-api",
+								"matooma",
+								"com"
+							],
+							"path": [
+								"v1",
+								"simcards",
+								"8931080000020000001"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SMS",
+			"item": [
+				{
+					"name": "/v1/sms",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "abcd123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"gsm\": \"123456\",\n    \"message\": \"Hello\",\n    \"callbackUrl\": \"http://www.matooma.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://external-api.matooma.com/v1/sms",
+							"protocol": "https",
+							"host": [
+								"external-api",
+								"matooma",
+								"com"
+							],
+							"path": [
+								"v1",
+								"sms"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
