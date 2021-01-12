@@ -23,6 +23,7 @@ Version   | Date
 
 ## :warning: Major updates
 
+* All current entity identifiers will change
 * Remove route Manufacturers (_/v1/manufacturers_)
 * Remove route Profiles (_/v1/profiles_) to route Offers (_/v1/offers_)
 * Update route Offers (_/v1/offers_)
