@@ -426,7 +426,6 @@ Version   | Date
 * Deletion of the attribute _manufacturerId_
 * Deletion of the attribute _operatorSlug_
 * Change the name of the attribute _profileId_ to _offerId_
-* Deletion of the attributes _serialNumber_, _reference_, _imei_ and _comment_ of the attribute _items_ (they won't be used if they are still present)
 * Add of a new attribute _customerId_ of type integer
 
 <table>
@@ -468,8 +467,13 @@ Version   | Date
   "modelId": 3,
   "offerId": 4,
   "items": [
-    "01234567890123456789",
-    "12345678901234567890"
+    {
+      "iccid": "1234567890123456789",
+      "serialNumber": "123456",
+      "reference": "abc-1",
+      "imei": "123",
+      "comment": "Comment 1"
+    }
   ]
 }
 </pre>
