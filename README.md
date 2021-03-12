@@ -1,10 +1,17 @@
-![version](https://img.shields.io/badge/version-1.0.0-brightgreen.svg?style=flat-square)
+![version](https://img.shields.io/badge/version-1.0.1-brightgreen.svg?style=flat-square)
 
 # Matooma API documentation
 
 Version   | Date
 --------- | --------------
+**[1.0.1](#version-101)** | **12-03-2021**
 **[1.0.0](#version-100)** | **11-01-2021**
+
+# Version 1.0.1
+
+* Add new route _/token_ to fit the current API
+
+**Note**: the existing route _/v1/token_ still works. Both routes _/token_ and _/v1/token_ work the same way
 
 # Version 1.0.0
 
