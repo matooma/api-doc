@@ -1,11 +1,63 @@
-![version](https://img.shields.io/badge/version-1.0.1-brightgreen.svg?style=flat-square)
+![version](https://img.shields.io/badge/version-1.0.2-brightgreen.svg?style=flat-square)
 
 # Matooma API documentation
 
 Version   | Date
 --------- | --------------
+**[1.0.2](#version-102)** | **19-04-2021**
 **[1.0.1](#version-101)** | **12-03-2021**
 **[1.0.0](#version-100)** | **11-01-2021**
+
+# Version 1.0.2
+
+* Remove fields **isMatoowan**, **simcardVersion**, **history** and **sms** from routes _/api/devices_ and _/api/devices/{id}_
+* Remove field **scheduledAt** from routes _/v1/provisioning-requests_ and _/v1/provisioning-requests/{id}_
+* Revert <span style="color: #009D77">**POST**</span> _/v1/pairing_ error list in response to its original value
+
+<table>
+    <thead>
+        <tr>
+            <th>Wrong response</th>
+            <th>Correct response</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+<pre>
+{
+  "errors": {
+    "is-a-duplicate": [],
+    "does-not-exist-in-fleet": [],
+    "is-not-available": [],
+    "is-already-paired": [],
+    "wrong-offer-operator": [],
+    "incorrect-customer": [],
+    "forbidden-sim-version": [],
+    "undefined-error": []
+  }
+}
+</pre>
+            </td>
+            <td>
+<pre>
+{
+  "errors": {
+    "is-a-duplicate": [],
+    "does-not-exist-in-fleet": [],
+    "is-not-available": [],
+    "is-already-paired": [],
+    "wrong-operator": [],
+    "is-not-a-valid-offer": [],
+    "undefined-error": [],
+    "generation": []
+  }
+}
+</pre>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 # Version 1.0.1
 
